@@ -7,6 +7,9 @@ namespace CardSortSample
 {
     public static class Sorter
     {
+        //Так как при сортировке выполняется проход по исходной коллекции
+        //во вложенном цикле, то сложность алгоритма будет O(n^2)
+
         public static IEnumerable<Card> Sort(IEnumerable<Card> cardList)
         {
             if (!cardList.Any())
